@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Varsity Hackathon 2024</title>
+    <link rel="icon" href="/dist/logo/logo.png" type="image/png">
+    <meta name="description" content="Meet the talented team behind VHack" />
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <header class="sticky top-0 z-50 bg-secondary/90 backdrop-blur-sm shadow-sm h-[7vh] md:h-[7vh] transition-all duration-300">
+        <nav class="flex items-center justify-between w-[92%] mx-auto h-full">
+            <a class="flex items-center gap-2 normal-case text-xl w-full h-full" href="#">
+                <img src="https://vhackusm.com/img/VHack_Logo.png" alt="logo" width="32px" height="32px">
+                <div class="text-xl font-skranji w-full max-sm:hidden text-white">
+                    V HACK
+                </div>
+            </a>
+            <div
+                class="nav-links duration-500 absolute md:static md:min-h-fit min-h-[60vh] right-0 top-[-800%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-3 bg-primary ml-auto">
+                    <li>
+                        <a class="font-proza text-white hover:text-[#60A5FA]" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="font-proza text-white hover:text-[#60A5FA]" href="#">Tentative</a>
+                    </li>
+                    <li>
+                        <a class="font-proza text-white hover:text-[#60A5FA]" href="#">Speakers</a>
+                    </li>
+                    <li>
+                        <a class="font-proza text-white hover:text-[#60A5FA]" href="#">Judges</a>
+                    </li>
+                    <li>
+                        <a class="font-proza text-white hover:text-[#60A5FA]" href="#">Mentors</a>
+                    </li>
+                    <li>
+                        <a class="font-proza text-white hover:text-[#60A5FA]" href="#">Partners</a>
+                    </li>
+                    <li>
+                        <a class="font-proza text-white hover:text-[#60A5FA]" href="#">FAQs</a>
+                    </li>
+                    <li>
+                        <a class="font-proza text-white hover:text-[#60A5FA]" href="#">Rules</a>
+                    </li>
+                    <li>
+                        <a class="font-proza whitespace-nowrap text-white hover:text-[#60A5FA]" href="#">Organising Team</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <button class="font-proza bg-button text-black rounded-lg px-5 py-2 hover:bg-[#F0F8FF] w-max h-10">Log
+                    in</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu-outline"
+                    class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+        <div class="absolute left-0 right-0 bottom-0 h-px bg-[#808080] opacity-0 transition-opacity duration-300"></div>
+    </header>
+
+    <script>
+        const navLinks = document.querySelector(".nav-links")
+        function onToggleMenu(e) {
+            if (e.name === 'menu-outline') {
+                e.name = 'close-outline'
+                navLinks.classList.add('top-[7%]')
+            } else {
+                e.name = 'menu-outline'
+                navLinks.classList.remove('top-[7%]')
+            }
+        }
+        
+        window.addEventListener('resize', function () {
+        if (window.innerWidth >= 768) {
+          navLinks.classList.remove('min-h-[60vh]');
+          navLinks.classList.add('md:min-h-fit');
+          menuIcon.name = 'menu-outline';
+        } else {
+          navLinks.classList.add('min-h-[60vh]');
+          navLinks.classList.remove('md:min-h-fit');
+        }
+      });
+
+      window.addEventListener('scroll', function () {
+        const line = document.querySelector('.absolute.left-0.right-0.bottom-0.h-px');
+        if (window.scrollY > 50) {
+          line.classList.remove('opacity-0');
+        } else {
+          line.classList.add('opacity-0');
+        }
+      });
+    </script>
+    <main class="mt-16 mx-4 mb-20 sm:mx-10 flex justify-center items-center">
+        <div class="max-w-[1440px] w-full">
+            <div
+            class="flex flex-wrap justify-center items-start max-w-[80%] [@media(min-width:1400px)]:flex-col [@media(min-width:1400px)]:max-w-full [@media(min-width:1400px)]:justify-start [@media(min-width:1400px)]:ml-6 [@media(min-width:1400px)]:fixed [@media(min-width:1400px)]:-mt-8 mx-auto">
+            <h1
+                class="w-full text-4xl md:text-5xl text-center text-[rgb(239,246,139)] font-['Skranji'] [@media(min-width:1400px)]:mb-4">
+                Meet the team.
+            </h1>
+            <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-white mt-2 font-light text-left px-4 py-2.5"
+                type="button" href="index.html">
+                All
+            </a>
+            <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-[#60A5FA] bg-[#0a0f12] rounded-md inline-block mt-2 font-light text-left px-4 py-2.5"
+                type="button" href="./topCommittee.html">
+                Top Committee
+            </a>
+            <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-white mt-2 font-light text-left px-4 py-2.5"
+                type="button" href="./programme.html">
+                Programme
+            </a>
+            <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-white mt-2 font-light text-left px-4 py-2.5"
+                type="button" href="./publicRelation.html">
+                Public Relations and Documentation
+            </a>
+            <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-white mt-2 font-light text-left px-4 py-2.5"
+                type="button" href="./publicity.html">
+                Publicity and Marketing
+            </a>
+            <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-white mt-2 font-light text-left px-4 py-2.5"
+                type="button" href="./sponsorship.html">
+                Sponsorship
+            </a>
+            <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-white mt-2 font-light text-left px-4 py-2.5"
+                type="button" href="./logistic.html">
+                Logistics
+            </a>
+            <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA]  text-white mt-2 font-light text-left px-4 py-2.5"
+                type="button" href="./technical.html">
+                Technical
+            </a>
+            <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-white mt-2 font-light text-left px-4 py-2.5"
+                type="button" href="./design.html">
+                Design &amp; Multimedia
+            </a>
+        </div>
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 justify-center items-center [@media(min-width:940px)]:grid-cols-3 [@media(min-width:1400px)]:max-w-[80%] [@media(min-width:1400px)]:ml-96">
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2">
+                        </div>
+                        <div class="w-44 overflow-hidden">
+                            <span class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;">
+                                <img id="committeeAvatar-0" src="/dist/image/qianyun.webp" alt="Lim Qian Yun"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200">
+                            </span>
+                        </div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">
+                        Lim Qian Yun
+                    </p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">
+                        Top Committee
+                    </p>
+                    <p class="text-white font-proza">
+                        Project Director
+                    </p>
+                    <div class="mt-2 flex gap-3">
+                        <a class="link" href="https://www.facebook.com/qy.lim.5" target="_blank"
+                            rel="noopener noreferrer">
+                            <i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon">
+                            </i>
+                        </a>
+                        <a class="link" href="https://www.instagram.com/qiannyunnn" target="_blank"
+                            rel="noopener noreferrer">
+                            <i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon">
+                            </i>
+                        </a>
+                        <a class="link" href="https://www.linkedin.com/in/lim-qian-yun-292707256/" target="_blank"
+                            rel="noopener noreferrer">
+                            <i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2">
+                        </div>
+                        <div class="w-44 overflow-hidden">
+                            <span class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-1" src="/dist/image/weize.webp" alt="Wong Wei Ze"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200">
+                            </span>
+                        </div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">
+                        Wong Wei Ze
+                    </p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">
+                        Top Committee
+                    </p>
+                    <p class="text-white font-proza">
+                        Vice Project Director
+                    </p>
+                    <div class="mt-2 flex gap-3">
+                        <a class="link" href="https://www.facebook.com/weize.wong.3" target="_blank"
+                            rel="noopener noreferrer">
+                            <i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon">
+                            </i>
+                        </a>
+                        <a class="link" href="https://www.instagram.com/weize_0912" target="_blank"
+                            rel="noopener noreferrer">
+                            <i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon">
+
+                            </i></a><a class="link" target="_blank" rel="noopener noreferrer"
+                            href="https://www.linkedin.com/in/wong-wei-ze-b61b62208"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-2" src="/dist/image/lingges.webp" alt="Lingges A/L Muniandy"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">
+                        Lingges A/L Muniandy
+                    </p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">
+                        Top Committee
+                    </p>
+                    <p class="text-white font-proza">
+                        Vice Project Director
+                    </p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.instagram.com/lingges_muniandy"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/lingges-muniandy-8a4157171/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-3" src="/dist/image/maisarah.webp"
+                                    alt="Siti Maisarah Binti Khairul Anwar"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">
+                        Siti Maisarah Binti Khairul Anwar
+                    </p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">
+                        Top Committee
+                    </p>
+                    <p class="text-white font-proza">
+                        Secretary
+                    </p>
+                    <div class="mt-2 flex gap-3"><a class="link"
+                            href="https://www.facebook.com/sitimaisarah.khairulanwar" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/my.saraaah" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/siti-maisarah-92029129b/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-4" src="/dist/image/junliang.webp" alt="Chew Jun Liang"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">
+                        Chew Jun Liang
+                    </p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">
+                        Top Committee
+                    </p>
+                    <p class="text-white font-proza">
+                        Treasurer
+                    </p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/junliang.chew.1115"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" target="_blank" rel="noopener noreferrer"
+                            href="https://www.instagram.com/junliang_chew"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/junliang-chew-ab0840297/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

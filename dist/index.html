@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Varsity Hackathon 2024</title>
+    <link rel="icon" href="/dist/logo/logo.png" type="image/png">
+    <meta name="description" content="Meet the talented team behind VHack" />
+</head>
+
+<body>
+    <header class="sticky top-0 z-50 bg-secondary/90 backdrop-blur-sm shadow-sm h-[7vh] md:h-[7vh] transition-all duration-300">
+        <nav class="flex items-center justify-between w-[92%] mx-auto h-full">
+            <a class="flex items-center gap-2 normal-case text-xl w-full h-full" href="#">
+                <img src="https://vhackusm.com/img/VHack_Logo.png" alt="logo" width="32px" height="32px">
+                <div class="text-xl font-skranji w-full max-sm:hidden text-white">
+                    V HACK
+                </div>
+            </a>
+            <div
+                class="nav-links duration-500 absolute md:static md:min-h-fit min-h-[60vh] right-0 top-[-800%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-3 bg-primary ml-auto">
+                    <li>
+                        <a class="font-proza text-white hover:text-[#60A5FA]" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="font-proza text-white hover:text-[#60A5FA]" href="#">Tentative</a>
+                    </li>
+                    <li>
+                        <a class="font-proza text-white hover:text-[#60A5FA]" href="#">Speakers</a>
+                    </li>
+                    <li>
+                        <a class="font-proza text-white hover:text-[#60A5FA]" href="#">Judges</a>
+                    </li>
+                    <li>
+                        <a class="font-proza text-white hover:text-[#60A5FA]" href="#">Mentors</a>
+                    </li>
+                    <li>
+                        <a class="font-proza text-white hover:text-[#60A5FA]" href="#">Partners</a>
+                    </li>
+                    <li>
+                        <a class="font-proza text-white hover:text-[#60A5FA]" href="#">FAQs</a>
+                    </li>
+                    <li>
+                        <a class="font-proza text-white hover:text-[#60A5FA]" href="#">Rules</a>
+                    </li>
+                    <li>
+                        <a class="font-proza whitespace-nowrap text-white hover:text-[#60A5FA]" href="#">Organising Team</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <button class="font-proza bg-button text-black rounded-lg px-5 py-2 hover:bg-[#F0F8FF] w-max h-10">Log
+                    in</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu-outline"
+                    class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+        <div class="absolute left-0 right-0 bottom-0 h-px bg-[#808080] opacity-0 transition-opacity duration-300"></div>
+    </header>
+
+    <script>
+        const navLinks = document.querySelector(".nav-links")
+        function onToggleMenu(e) {
+            if (e.name === 'menu-outline') {
+                e.name = 'close-outline'
+                navLinks.classList.add('top-[7%]')
+            } else {
+                e.name = 'menu-outline'
+                navLinks.classList.remove('top-[7%]')
+            }
+        }
+        
+        window.addEventListener('resize', function () {
+        if (window.innerWidth >= 768) {
+          navLinks.classList.remove('min-h-[60vh]');
+          navLinks.classList.add('md:min-h-fit');
+          menuIcon.name = 'menu-outline';
+        } else {
+          navLinks.classList.add('min-h-[60vh]');
+          navLinks.classList.remove('md:min-h-fit');
+        }
+      });
+
+      window.addEventListener('scroll', function () {
+        const line = document.querySelector('.absolute.left-0.right-0.bottom-0.h-px');
+        if (window.scrollY > 50) {
+          line.classList.remove('opacity-0');
+        } else {
+          line.classList.add('opacity-0');
+        }
+      });
+    </script>
+    
+    <main class="mt-16 mx-4 mb-20 sm:mx-10 flex justify-center items-center">
+        <div class="max-w-[1440px] w-full">
+            <div
+                class="flex flex-wrap justify-center items-start max-w-[80%] [@media(min-width:1400px)]:flex-col [@media(min-width:1400px)]:max-w-full [@media(min-width:1400px)]:justify-start [@media(min-width:1400px)]:ml-6 [@media(min-width:1400px)]:fixed [@media(min-width:1400px)]:-mt-8 mx-auto">
+                <h1
+                    class="w-full text-4xl md:text-5xl text-center text-[rgb(239,246,139)] font-['Skranji'] [@media(min-width:1400px)]:mb-4">
+                    Meet the team.
+                </h1>
+                <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-[#60A5FA] bg-[#0a0f12] rounded-md inline-block mt-2 font-light text-left px-4 py-2.5"
+                    type="button" href="index.html">
+                    All
+                </a>
+                <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-white mt-2 font-light text-left px-4 py-2.5"
+                    type="button" href="./topCommittee.html">
+                    Top Committee
+                </a>
+                <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-white mt-2 font-light text-left px-4 py-2.5"
+                    type="button" href="./programme.html">
+                    Programme
+                </a>
+                <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-white mt-2 font-light text-left px-4 py-2.5"
+                    type="button" href="./publicRelation.html">
+                    Public Relations and Documentation
+                </a>
+                <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-white mt-2 font-light text-left px-4 py-2.5"
+                    type="button" href="./publicity.html">
+                    Publicity and Marketing
+                </a>
+                <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-white mt-2 font-light text-left px-4 py-2.5"
+                    type="button" href="./sponsorship.html">
+                    Sponsorship
+                </a>
+                <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-white mt-2 font-light text-left px-4 py-2.5"
+                    type="button" href="./logistic.html">
+                    Logistics
+                </a>
+                <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-white mt-2 font-light text-left px-4 py-2.5"
+                    type="button" href="./technical.html">
+                    Technical
+                </a>
+                <a class="transition-colors duration-200 font-proza text-lg hover:text-[#60A5FA] text-white mt-2 font-light text-left px-4 py-2.5"
+                    type="button" href="./design.html">
+                    Design &amp; Multimedia
+                </a>
+            </div>
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 justify-center items-center [@media(min-width:940px)]:grid-cols-3 [@media(min-width:1400px)]:max-w-[80%] [@media(min-width:1400px)]:ml-96">
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-0" src="/dist/image/qianyun.webp"
+                                    alt="Lim Qian Yun"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Lim Qian Yun</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Top Committee
+                    </p>
+                    <p class="text-white font-proza">Project Director</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/qy.lim.5"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/qiannyunnn" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/lim-qian-yun-292707256/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-1" src="/dist/image/weize.webp"
+                                    alt="Wong Wei Ze"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Wong Wei Ze</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Top Committee
+                    </p>
+                    <p class="text-white font-proza">Vice Project Director</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/weize.wong.3"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/weize_0912" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" target="_blank" rel="noopener noreferrer"
+                            href="https://www.linkedin.com/in/wong-wei-ze-b61b62208"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-2" src="/dist/image/lingges.webp"
+                                    alt="Lingges A/L Muniandy"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Lingges A/L Muniandy</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Top Committee
+                    </p>
+                    <p class="text-white font-proza">Vice Project Director</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.instagram.com/lingges_muniandy"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/lingges-muniandy-8a4157171/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-3"
+                                    src="/dist/image/maisarah.webp"
+                                    alt="Siti Maisarah Binti Khairul Anwar"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Siti Maisarah Binti Khairul
+                        Anwar</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Top Committee
+                    </p>
+                    <p class="text-white font-proza">Secretary</p>
+                    <div class="mt-2 flex gap-3"><a class="link"
+                            href="https://www.facebook.com/sitimaisarah.khairulanwar" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/my.saraaah" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/siti-maisarah-92029129b/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-4"
+                                    src="/dist/image/junliang.webp" alt="Chew Jun Liang"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Chew Jun Liang</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Top Committee
+                    </p>
+                    <p class="text-white font-proza">Treasurer</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/junliang.chew.1115"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" target="_blank" rel="noopener noreferrer"
+                            href="https://www.instagram.com/junliang_chew"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/junliang-chew-ab0840297/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-5"
+                                    src="/dist/image/weiyi.webp" alt="Tan Wei Yi"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Tan Wei Yi</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Programme</p>
+                    <p class="text-white font-proza">Head Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/weiyi.0206"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/weiyi_0206" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/weiyitan03" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-6"
+                                    src="/dist/image/qiujun.webp" alt="Ng Qiu Jun"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Ng Qiu Jun</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Programme</p>
+                    <p class="text-white font-proza">Vice Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/qiujun.ng"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/qiujunng" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/qiu-jun-ng-598004256" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-7"
+                                    src="/dist/image/padma.webp"
+                                    alt="Padma Pireeyaa A/P S Soundra Rajan"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Padma Pireeyaa A/P S Soundra
+                        Rajan</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Programme</p>
+                    <p class="text-white font-proza">Vice Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/padma.pireeyaa.9"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/pireeyaa_041115" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/padma-pireeyaa-642747251" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-8"
+                                    src="/dist/image/asreena.webp"
+                                    alt="Asreena Chulaphong A/P Akhom"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Asreena Chulaphong A/P Akhom
+                    </p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Programme</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/asreena.chulaphong"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/xreena_" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/asreena-chulaphong-112771201" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-9"
+                                    src="/dist/image/reeyeankha.webp" alt="Reeyeankha"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Reeyeankha</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Programme</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.instagram.com/reeyeankha"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/reeyeankha-balamurali-5091a0299"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-10"
+                                    src="/dist/image/ammar.webp"
+                                    alt="Muhammad Ammar Danial Bin Abdullah"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Muhammad Ammar Danial Bin
+                        Abdullah</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Programme</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/danial.0412"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/amrdxnial._" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/ammar-danial-abdullah-a20a45297"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-11"
+                                    src="/dist/image/ashman.webp"
+                                    alt="Ashman Bin Mohd Fauzi"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Ashman Bin Mohd Fauzi</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Programme</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/ashman.ashmanfauzi"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/_ashfauzi_" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/ashman-mohd-fauzi-b2444729a" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-12"
+                                    src="/dist/image/asyraf.webp"
+                                    alt="Ahmad Asyraf Bin Ahmad Johari"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Ahmad Asyraf Bin Ahmad Johari
+                    </p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Programme</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/Ahmad%20Asyraf%20Johari"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/ahmdasyraaf" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/ahmad-asyraf-johari-62a70029a"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-13" src="/dist/image/shereen.webp"
+                                    alt="Shereen Ilyza Binti Sheik Mujibu Rahman"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Shereen Ilyza Binti Sheik
+                        Mujibu Rahman</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Public Relations
+                        and Documentation</p>
+                    <p class="text-white font-proza">Head Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/shereen.ilyza"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/ilyzailyza_" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/shereen-ilyza-558b52198" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-14" src="/dist/image/kechee.webp"
+                                    alt="Ching Ke Chee"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Ching Ke Chee</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Public Relations
+                        and Documentation</p>
+                    <p class="text-white font-proza">Vice Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/kechee0101"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/kechee____" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/ching-ke-chee-57393b255" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-15" src="/dist/image/zheyin.webp"
+                                    alt="Law Zhe Yin"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Law Zhe Yin</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Public Relations
+                        and Documentation</p>
+                    <p class="text-white font-proza">Vice Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/law.zheyin"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/zheyinlaw04" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/law-zhe-yin-a7176b297/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-16" src="/dist/image/faiq.webp"
+                                    alt="Muhammad Faiq Fadhlullah"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Muhammad Faiq Fadhlullah</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Public Relations
+                        and Documentation</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.instagram.com/faiqfdhh"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/muhammad-faiq-fadhlullah-6bb32020b"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-17" src="/dist/image/thanesh.webp"
+                                    alt="Thaneshwaran A/L Sarsidharan"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Thaneshwaran A/L Sarsidharan
+                    </p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Public Relations
+                        and Documentation</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link"
+                            href="https://www.facebook.com/thaneshwaran.sarsidharan" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/thanesh_1505" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/thaneshwaran-sarsidharan-53a978256"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-18" src="/dist/image/nadia.webp"
+                                    alt="Nur Nadia Nabila Binti Mohamad Fauzi"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Nur Nadia Nabila Binti
+                        Mohamad Fauzi</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Public Relations
+                        and Documentation</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/nadia.nabila"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/nadianabila._" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/nadia-nabila-86a6481ab" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-19" src="/dist/image/airiel.webp"
+                                    alt="Airiel Hazim Bin Redzuan Ng"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Airiel Hazim Bin Redzuan Ng
+                    </p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Public Relations
+                        and Documentation</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/airiel.hazim"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://instagram.com/hazimairiel" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/airiel-hazim-b2409b241" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-20"
+                                    src="/dist/image/aimi.webp"
+                                    alt="Khairin Aimi Binti Mohd Ashri"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Khairin Aimi Binti Mohd Ashri
+                    </p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Publicity and
+                        Marketing</p>
+                    <p class="text-white font-proza">Head Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/AimiAshri"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/aimiashri" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/aimiashri" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-21"
+                                    src="/dist/image/danial.webp"
+                                    alt="Danial Hakim Bin Kamal Azwa"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Danial Hakim Bin Kamal Azwa
+                    </p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Publicity and
+                        Marketing</p>
+                    <p class="text-white font-proza">Vice Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/Yolo.Bonk"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/thedanialhakim" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/danial-hakim-bin-kamal-azwa-044536297"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-22"
+                                    src="/dist/image/zhisyeh.webp" alt="Lee Zhi Syeh"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Lee Zhi Syeh</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Publicity and
+                        Marketing</p>
+                    <p class="text-white font-proza">Vice Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/zslee0406"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/zslee_04" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/zavier-lee-b80886194" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-23"
+                                    src="/dist/image/raziqin.webp"
+                                    alt="Raziqin Husna Binti Abdul Wahid"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Raziqin Husna Binti Abdul
+                        Wahid</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Publicity and
+                        Marketing</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link"
+                            href="https://www.facebook.com/profile.php?id=61550966081673" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/thousands_million_years_stars" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/raziqin-husna-9385ba291" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-24"
+                                    src="/dist/image/zafry.webp"
+                                    alt="Adam Zafry Bin Zaharin"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Adam Zafry Bin Zaharin</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Publicity and
+                        Marketing</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/adamzafry.zaharin"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/adamzafry._" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/adam-zafry-zaharin-352492243/"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-25"
+                                    src="/dist/image/piekhui.webp"
+                                    alt="Chung Piek Hui"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Chung Piek Hui</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Publicity and
+                        Marketing</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/chung.mary.39"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/itshuiii_04" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/piek-hui-413a5729a/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-26"
+                                    src="/dist/image/arwen.webp"
+                                    alt="Arwen Laung Ai Wen"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Arwen Laung Ai Wen</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Publicity and
+                        Marketing</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/wtyfbnm" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/arwenlx" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/arwen-laung-4677b0298/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-27"
+                                    src="/dist/image/shuying.webp" alt="Goh Shu Ying"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Goh Shu Ying</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Publicity and
+                        Marketing</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link"
+                            href="https://www.facebook.com/profile.php?id=100009248082936" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/shuying__" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/goh-shu-ying-90890b280" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-28"
+                                    src="/dist/image/aqif.webp"
+                                    alt="Muhammad Aqif Wafiy Bin Mohd Farid"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Muhammad Aqif Wafiy Bin Mohd
+                        Farid</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Sponsorship</p>
+                    <p class="text-white font-proza">Head Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.instagram.com/aqiiffff"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/aqif-wafiy-7384a9237" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-29"
+                                    src="/dist/image/yuyuan.webp" alt="Chin Yu Yuan"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Chin Yu Yuan</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Sponsorship</p>
+                    <p class="text-white font-proza">Vice Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/yuyuanchinn"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/yuyuanchin_" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/yuyuanchin" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-30"
+                                    src="/dist/image/mervyn.webp"
+                                    alt="Mervyn Chew Yew Zhang"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Mervyn Chew Yew Zhang</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Sponsorship</p>
+                    <p class="text-white font-proza">Vice Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/mervyn.chew.904"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.facebook.com/mervyn.chew.904" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/mervyn-chew-9458b4298" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-31"
+                                    src="/dist/image/peiwen.webp" alt="Woo Pei Wen"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Woo Pei Wen</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Sponsorship</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/crystal.woo.507"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/peiwen_507" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/woo-pei-wen-aa3961298" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-32"
+                                    src="/dist/image/sabrina.webp"
+                                    alt="Sabrina Binti Sofian"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Sabrina Binti Sofian</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Sponsorship</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/eli.harissa"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/sabrina-sofian-370454255" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-33"
+                                    src="/dist/image/haojing.webp"
+                                    alt="Yeoh Hao Jing"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Yeoh Hao Jing</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Sponsorship</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link"
+                            href="https://www.facebook.com/profile.php?id=100011291048997" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/hj0.0726" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/yeoh-hao-jing-98371129a" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-34"
+                                    src="/dist/image/shirley.webp"
+                                    alt="Shirley Binti Osman"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Shirley Binti Osman</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Sponsorship</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.instagram.com/shirlezz_"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/shirley-binti-osman-71b6021a7"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-35"
+                                    src="/dist/image/hemwaren.webp"
+                                    alt="Hemwaren A/L Kunalan"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Hemwaren A/L Kunalan</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Logistics</p>
+                    <p class="text-white font-proza">Head Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link"
+                            href="https://www.facebook.com/profile.php?id=100087671733621" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/_hemmm03_" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/hemwaren-kunalan-964024256" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-36"
+                                    src="/dist/image/juncheng.webp"
+                                    alt="Tan Jun Cheng"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Tan Jun Cheng</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Logistics</p>
+                    <p class="text-white font-proza">Vice Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/TanTJC" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/jccc_0227" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-37"
+                                    src="/dist/image/seongkin.webp"
+                                    alt="Ooi Seong Kin"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Ooi Seong Kin</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Logistics</p>
+                    <p class="text-white font-proza">Vice Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link"
+                            href="https://www.facebook.com/profile.php?id=100007170198629" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/sk_ooi_" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/ooi-seong-kin-55071229a/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-38"
+                                    src="/dist/image/shuyi.webp" alt="Yeoh Shu Yi"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Yeoh Shu Yi</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Logistics</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/yeohshuyi123"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/shuyi.123" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/shu-yi-yeoh-253301256" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-39"
+                                    src="/dist/image/wanmuhammad.webp"
+                                    alt="Wan Muhammad Adam Bin Wan Mohd Fauzi"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Wan Muhammad Adam Bin Wan
+                        Mohd Fauzi</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Logistics</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.instagram.com/wan_tganu"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/wan-muhammad-adam-74409427a" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-40"
+                                    src="/dist/image/yinthong.webp" alt="Ng Yin Thong"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Ng Yin Thong</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Logistics</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/yin.thong.14"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/yinthong_323" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/ng-yin-thong-729686298/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-41"
+                                    src="/dist/image/tsehan.webp" alt="Tan Tse Han"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Tan Tse Han</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Logistics</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/tsehan.tan.1"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/tsehan_tan" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/tsehan-tan-b4546b283" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-42"
+                                    src="/dist/image/shivabala.webp"
+                                    alt="Shivabala A/L Ganeish"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Shivabala A/L Ganeish</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Logistics</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/shivabala.ganeish.1"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/shivabala_145" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/shivabala-ganeish-7a5b79229" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-43"
+                                    src="/dist/image/chihao.webp" alt="Loo Chi Hao"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Loo Chi Hao</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Technical</p>
+                    <p class="text-white font-proza">Head Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/chi.hao.73157"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/haocloo" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/loochihao/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-44"
+                                    src="/dist/image/chunkeat.webp"
+                                    alt="Koay Chun Keat"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Koay Chun Keat</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Technical</p>
+                    <p class="text-white font-proza">Vice Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/koay.chunkeat"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/koaykck" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/koay-chun-keat-791b9b254/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-45"
+                                    src="/dist/image/wenhao.webp" alt="Lim Wen Hao"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Lim Wen Hao</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Technical</p>
+                    <p class="text-white font-proza">Vice Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/WenHao1223"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/limwenhao1223" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/wenhao1223" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-46"
+                                    src="/dist/image/choyyein.webp"
+                                    alt="Liew Choy Yein"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Liew Choy Yein</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Technical</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/cy.liew.104"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/choy_yein" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/liew-choy-yein-1bbb271bb" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-47"
+                                    src="/dist/image/cheahao.webp"
+                                    alt="Cheng Chea Hao"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Cheng Chea Hao</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Technical</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/chengcheahao"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/cch.0303" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/cheng-chea-hao" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-48"
+                                    src="/dist/image/miinning.webp"
+                                    alt="Lim Miin Ning"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Lim Miin Ning</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Technical</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link"
+                            href="https://www.facebook.com/profile.php?id=100004293498253" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/miinning_03" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/miin-ning-lim-4952a8256" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-49"
+                                    src="/dist/image/tianyu.webp" alt="Har Tien Yu"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Har Tien Yu</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Technical</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/hartienyu/"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/hartienyu" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/har-tien-yu-022a70279" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-50"
+                                    src="/dist/image/andyclos.webp"
+                                    alt="Andyclos A/L Boon Mee"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Andyclos A/L Boon Mee</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Technical</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/andy.clos.1025"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/andy.clos" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/andyclos-boon-mee-92327324b" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-51" src="/dist/image/bern.webp"
+                                    alt="Bernadatte Lee Pei Chen"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Bernadatte Lee Pei Chen</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Design &amp;
+                        Multimedia</p>
+                    <p class="text-white font-proza">Head Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/peichen.lee.3979"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/bee_net.3979" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/bernadette-lee-876a47256" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-52" src="/dist/image/iuwan.webp"
+                                    alt="Khoo Iu Wan"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Khoo Iu Wan</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Design &amp;
+                        Multimedia</p>
+                    <p class="text-white font-proza">Vice Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/night6927"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/night_6927" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/khoo-iu-wan/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-53" src="/dist/image/hazim.webp"
+                                    alt="Hazim Muhsin Bin Munir"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Hazim Muhsin Bin Munir</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Design &amp;
+                        Multimedia</p>
+                    <p class="text-white font-proza">Vice Executive</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/muhsin.munir"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/mvhseyn" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/hazim-muhsin-munir-366b60273/"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-54"
+                                    src="/dist/image/najihah.webp"
+                                    alt="Najihah Hanani Binti Ahmad Farid"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Najihah Hanani Binti Ahmad
+                        Farid</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Design &amp;
+                        Multimedia</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/njihahhnani"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/njhh.hnn" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/njihahhnani/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-55" src="/dist/image/sergio.webp"
+                                    alt="Sergio Law Zhe Xian"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Sergio Law Zhe Xian</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Design &amp;
+                        Multimedia</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/sergio.lawzhexian"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.facebook.com/njihahhnani" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/sergio-law-zhe-xian-5968a3256/"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-56" src="/dist/image/darren.webp"
+                                    alt="Darren Fu Hon Meng"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Darren Fu Hon Meng</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Design &amp;
+                        Multimedia</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/fu.darren.79"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/fu_darren" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/darren-fu-355101297/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-57" src="/dist/image/gordon.webp"
+                                    alt="Gordon Chai Ming Xun"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Gordon Chai Ming Xun</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Design &amp;
+                        Multimedia</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/gordonchai"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://instagram.com/shun.0375" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/gordon-chai-354015297" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-58" src="/dist/image/hadrie.webp"
+                                    alt="Hadrie Hakimi Bin Nazarudin"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Hadrie Hakimi Bin Nazarudin
+                    </p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Design &amp;
+                        Multimedia</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link"
+                            href="https://www.facebook.com/profile.php?id=61553462400176" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/hadriee" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/hadrie-hakimi-03799329a" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-59" src="/dist/image/yihan.webp"
+                                    alt="Loh Yi Han"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Loh Yi Han</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Design &amp;
+                        Multimedia</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link" href="https://www.facebook.com/honey.loh.14"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/lyihan04" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/loh-yi-han-115027297/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center min-h-[400px] py-8">
+                    <div class="w-44 mb-8 relative">
+                        <div class="w-44 h-24 rounded-t-sm bottom-0 bg-white absolute z-2"></div>
+                        <div class="w-44 overflow-hidden"><span
+                                class="lazy-load-image-background opacity lazy-load-image-loaded"
+                                style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
+                                    id="committeeAvatar-60"
+                                    src="/dist/image/meizhen.webp" alt="Wong Mei Zhen"
+                                    class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
+                                    width="200" height="200"></span></div>
+                    </div>
+                    <p class="font-bold text-base text-center text-white font-proza -mt-4">Wong Mei Zhen</p>
+                    <p class=" text-center text-base text-white font-proza md:text-[15px] lg:text-base">Design &amp;
+                        Multimedia</p>
+                    <p class="text-white font-proza">Coordinator</p>
+                    <div class="mt-2 flex gap-3"><a class="link"
+                            href="https://www.facebook.com/profile.php?id=100021230984909" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-lg text-white/50 hover:text-[#3b5998] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.instagram.com/_11znnn" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram fa-lg text-white/50 hover:text-[#8a3ab9] hover:rotate-360 transition-transform duration-300 social-icon"></i></a><a
+                            class="link" href="https://www.linkedin.com/in/mei-zhen-890b2929a/" target="_blank"
+                            rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-lg text-white/50 hover:text-[#0077B5] hover:rotate-360 transition-transform duration-300 social-icon"></i></a>
+                    </div>
+                </div>
+            </div>
