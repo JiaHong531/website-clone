@@ -17,7 +17,8 @@
 </head>
 
 <body>
-    <header class="sticky top-0 z-50 bg-secondary/90 backdrop-blur-sm shadow-sm h-[7vh] md:h-[7vh] transition-all duration-300">
+    <header
+        class="sticky top-0 z-50 bg-secondary/90 backdrop-blur-sm shadow-sm h-[7vh] md:h-[7vh] transition-all duration-300">
         <nav class="flex items-center justify-between w-[92%] mx-auto h-full">
             <a class="flex items-center gap-2 normal-case text-xl w-full h-full" href="#">
                 <img src="https://vhackusm.com/img/VHack_Logo.png" alt="logo" width="32px" height="32px">
@@ -53,7 +54,8 @@
                         <a class="font-proza text-white hover:text-[#60A5FA]" href="#">Rules</a>
                     </li>
                     <li>
-                        <a class="font-proza whitespace-nowrap text-white hover:text-[#60A5FA]" href="#">Organising Team</a>
+                        <a class="font-proza whitespace-nowrap text-white hover:text-[#60A5FA]" href="#">Organising
+                            Team</a>
                     </li>
                 </ul>
             </div>
@@ -78,28 +80,28 @@
                 navLinks.classList.remove('top-[7%]')
             }
         }
-        
-        window.addEventListener('resize', function () {
-        if (window.innerWidth >= 768) {
-          navLinks.classList.remove('min-h-[60vh]');
-          navLinks.classList.add('md:min-h-fit');
-          menuIcon.name = 'menu-outline';
-        } else {
-          navLinks.classList.add('min-h-[60vh]');
-          navLinks.classList.remove('md:min-h-fit');
-        }
-      });
 
-      window.addEventListener('scroll', function () {
-        const line = document.querySelector('.absolute.left-0.right-0.bottom-0.h-px');
-        if (window.scrollY > 50) {
-          line.classList.remove('opacity-0');
-        } else {
-          line.classList.add('opacity-0');
-        }
-      });
+        window.addEventListener('resize', function () {
+            if (window.innerWidth >= 768) {
+                navLinks.classList.remove('min-h-[60vh]');
+                navLinks.classList.add('md:min-h-fit');
+                menuIcon.name = 'menu-outline';
+            } else {
+                navLinks.classList.add('min-h-[60vh]');
+                navLinks.classList.remove('md:min-h-fit');
+            }
+        });
+
+        window.addEventListener('scroll', function () {
+            const line = document.querySelector('.absolute.left-0.right-0.bottom-0.h-px');
+            if (window.scrollY > 50) {
+                line.classList.remove('opacity-0');
+            } else {
+                line.classList.add('opacity-0');
+            }
+        });
     </script>
-    
+
     <main class="mt-16 mx-4 mb-20 sm:mx-10 flex justify-center items-center">
         <div class="max-w-[1440px] w-full">
             <div
@@ -153,8 +155,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-0" src="image/qianyun.webp"
-                                    alt="Lim Qian Yun"
+                                    id="committeeAvatar-0" src="image/qianyun.webp" alt="Lim Qian Yun"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -179,8 +180,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-1" src="image/weize.webp"
-                                    alt="Wong Wei Ze"
+                                    id="committeeAvatar-1" src="image/weize.webp" alt="Wong Wei Ze"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -205,8 +205,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-2" src="image/lingges.webp"
-                                    alt="Lingges A/L Muniandy"
+                                    id="committeeAvatar-2" src="image/lingges.webp" alt="Lingges A/L Muniandy"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -228,8 +227,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-3"
-                                    src="image/maisarah.webp"
+                                    id="committeeAvatar-3" src="image/maisarah.webp"
                                     alt="Siti Maisarah Binti Khairul Anwar"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
@@ -257,8 +255,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-4"
-                                    src="image/junliang.webp" alt="Chew Jun Liang"
+                                    id="committeeAvatar-4" src="image/junliang.webp" alt="Chew Jun Liang"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -283,8 +280,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-5"
-                                    src="image/weiyi.webp" alt="Tan Wei Yi"
+                                    id="committeeAvatar-5" src="image/weiyi.webp" alt="Tan Wei Yi"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -308,8 +304,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-6"
-                                    src="image/qiujun.webp" alt="Ng Qiu Jun"
+                                    id="committeeAvatar-6" src="image/qiujun.webp" alt="Ng Qiu Jun"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -333,8 +328,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-7"
-                                    src="image/padma.webp"
+                                    id="committeeAvatar-7" src="image/padma.webp"
                                     alt="Padma Pireeyaa A/P S Soundra Rajan"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
@@ -360,9 +354,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-8"
-                                    src="image/asreena.webp"
-                                    alt="Asreena Chulaphong A/P Akhom"
+                                    id="committeeAvatar-8" src="image/asreena.webp" alt="Asreena Chulaphong A/P Akhom"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -387,8 +379,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-9"
-                                    src="image/reeyeankha.webp" alt="Reeyeankha"
+                                    id="committeeAvatar-9" src="image/reeyeankha.webp" alt="Reeyeankha"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -409,8 +400,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-10"
-                                    src="image/ammar.webp"
+                                    id="committeeAvatar-10" src="image/ammar.webp"
                                     alt="Muhammad Ammar Danial Bin Abdullah"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
@@ -436,9 +426,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-11"
-                                    src="image/ashman.webp"
-                                    alt="Ashman Bin Mohd Fauzi"
+                                    id="committeeAvatar-11" src="image/ashman.webp" alt="Ashman Bin Mohd Fauzi"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -462,9 +450,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-12"
-                                    src="image/asyraf.webp"
-                                    alt="Ahmad Asyraf Bin Ahmad Johari"
+                                    id="committeeAvatar-12" src="image/asyraf.webp" alt="Ahmad Asyraf Bin Ahmad Johari"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -516,8 +502,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-14" src="image/kechee.webp"
-                                    alt="Ching Ke Chee"
+                                    id="committeeAvatar-14" src="image/kechee.webp" alt="Ching Ke Chee"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -542,8 +527,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-15" src="image/zheyin.webp"
-                                    alt="Law Zhe Yin"
+                                    id="committeeAvatar-15" src="image/zheyin.webp" alt="Law Zhe Yin"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -568,8 +552,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-16" src="image/faiq.webp"
-                                    alt="Muhammad Faiq Fadhlullah"
+                                    id="committeeAvatar-16" src="image/faiq.webp" alt="Muhammad Faiq Fadhlullah"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -591,8 +574,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-17" src="image/thanesh.webp"
-                                    alt="Thaneshwaran A/L Sarsidharan"
+                                    id="committeeAvatar-17" src="image/thanesh.webp" alt="Thaneshwaran A/L Sarsidharan"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -646,8 +628,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-19" src="image/airiel.webp"
-                                    alt="Airiel Hazim Bin Redzuan Ng"
+                                    id="committeeAvatar-19" src="image/airiel.webp" alt="Airiel Hazim Bin Redzuan Ng"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -673,9 +654,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-20"
-                                    src="image/aimi.webp"
-                                    alt="Khairin Aimi Binti Mohd Ashri"
+                                    id="committeeAvatar-20" src="image/aimi.webp" alt="Khairin Aimi Binti Mohd Ashri"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -701,9 +680,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-21"
-                                    src="image/danial.webp"
-                                    alt="Danial Hakim Bin Kamal Azwa"
+                                    id="committeeAvatar-21" src="image/danial.webp" alt="Danial Hakim Bin Kamal Azwa"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -729,8 +706,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-22"
-                                    src="image/zhisyeh.webp" alt="Lee Zhi Syeh"
+                                    id="committeeAvatar-22" src="image/zhisyeh.webp" alt="Lee Zhi Syeh"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -755,8 +731,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-23"
-                                    src="image/raziqin.webp"
+                                    id="committeeAvatar-23" src="image/raziqin.webp"
                                     alt="Raziqin Husna Binti Abdul Wahid"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
@@ -784,9 +759,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-24"
-                                    src="image/zafry.webp"
-                                    alt="Adam Zafry Bin Zaharin"
+                                    id="committeeAvatar-24" src="image/zafry.webp" alt="Adam Zafry Bin Zaharin"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -811,9 +784,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-25"
-                                    src="image/piekhui.webp"
-                                    alt="Chung Piek Hui"
+                                    id="committeeAvatar-25" src="image/piekhui.webp" alt="Chung Piek Hui"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -838,9 +809,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-26"
-                                    src="image/arwen.webp"
-                                    alt="Arwen Laung Ai Wen"
+                                    id="committeeAvatar-26" src="image/arwen.webp" alt="Arwen Laung Ai Wen"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -865,8 +834,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-27"
-                                    src="image/shuying.webp" alt="Goh Shu Ying"
+                                    id="committeeAvatar-27" src="image/shuying.webp" alt="Goh Shu Ying"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -892,8 +860,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-28"
-                                    src="image/aqif.webp"
+                                    id="committeeAvatar-28" src="image/aqif.webp"
                                     alt="Muhammad Aqif Wafiy Bin Mohd Farid"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
@@ -916,8 +883,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-29"
-                                    src="image/yuyuan.webp" alt="Chin Yu Yuan"
+                                    id="committeeAvatar-29" src="image/yuyuan.webp" alt="Chin Yu Yuan"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -941,9 +907,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-30"
-                                    src="image/mervyn.webp"
-                                    alt="Mervyn Chew Yew Zhang"
+                                    id="committeeAvatar-30" src="image/mervyn.webp" alt="Mervyn Chew Yew Zhang"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -967,8 +931,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-31"
-                                    src="image/peiwen.webp" alt="Woo Pei Wen"
+                                    id="committeeAvatar-31" src="image/peiwen.webp" alt="Woo Pei Wen"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -992,9 +955,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-32"
-                                    src="image/sabrina.webp"
-                                    alt="Sabrina Binti Sofian"
+                                    id="committeeAvatar-32" src="image/sabrina.webp" alt="Sabrina Binti Sofian"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1017,9 +978,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-33"
-                                    src="image/haojing.webp"
-                                    alt="Yeoh Hao Jing"
+                                    id="committeeAvatar-33" src="image/haojing.webp" alt="Yeoh Hao Jing"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1044,9 +1003,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-34"
-                                    src="image/shirley.webp"
-                                    alt="Shirley Binti Osman"
+                                    id="committeeAvatar-34" src="image/shirley.webp" alt="Shirley Binti Osman"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1067,9 +1024,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-35"
-                                    src="image/hemwaren.webp"
-                                    alt="Hemwaren A/L Kunalan"
+                                    id="committeeAvatar-35" src="image/hemwaren.webp" alt="Hemwaren A/L Kunalan"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1094,9 +1049,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-36"
-                                    src="image/juncheng.webp"
-                                    alt="Tan Jun Cheng"
+                                    id="committeeAvatar-36" src="image/juncheng.webp" alt="Tan Jun Cheng"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1119,9 +1072,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-37"
-                                    src="image/seongkin.webp"
-                                    alt="Ooi Seong Kin"
+                                    id="committeeAvatar-37" src="image/seongkin.webp" alt="Ooi Seong Kin"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1146,8 +1097,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-38"
-                                    src="image/shuyi.webp" alt="Yeoh Shu Yi"
+                                    id="committeeAvatar-38" src="image/shuyi.webp" alt="Yeoh Shu Yi"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1171,8 +1121,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-39"
-                                    src="image/wanmuhammad.webp"
+                                    id="committeeAvatar-39" src="image/wanmuhammad.webp"
                                     alt="Wan Muhammad Adam Bin Wan Mohd Fauzi"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
@@ -1195,8 +1144,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-40"
-                                    src="image/yinthong.webp" alt="Ng Yin Thong"
+                                    id="committeeAvatar-40" src="image/yinthong.webp" alt="Ng Yin Thong"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1220,8 +1168,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-41"
-                                    src="image/tsehan.webp" alt="Tan Tse Han"
+                                    id="committeeAvatar-41" src="image/tsehan.webp" alt="Tan Tse Han"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1245,9 +1192,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-42"
-                                    src="image/shivabala.webp"
-                                    alt="Shivabala A/L Ganeish"
+                                    id="committeeAvatar-42" src="image/shivabala.webp" alt="Shivabala A/L Ganeish"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1271,8 +1216,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-43"
-                                    src="image/chihao.webp" alt="Loo Chi Hao"
+                                    id="committeeAvatar-43" src="image/chihao.webp" alt="Loo Chi Hao"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1296,9 +1240,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-44"
-                                    src="image/chunkeat.webp"
-                                    alt="Koay Chun Keat"
+                                    id="committeeAvatar-44" src="image/chunkeat.webp" alt="Koay Chun Keat"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1322,8 +1264,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-45"
-                                    src="image/wenhao.webp" alt="Lim Wen Hao"
+                                    id="committeeAvatar-45" src="image/wenhao.webp" alt="Lim Wen Hao"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1347,9 +1288,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-46"
-                                    src="image/choyyein.webp"
-                                    alt="Liew Choy Yein"
+                                    id="committeeAvatar-46" src="image/choyyein.webp" alt="Liew Choy Yein"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1373,9 +1312,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-47"
-                                    src="image/cheahao.webp"
-                                    alt="Cheng Chea Hao"
+                                    id="committeeAvatar-47" src="image/cheahao.webp" alt="Cheng Chea Hao"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1399,9 +1336,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-48"
-                                    src="image/miinning.webp"
-                                    alt="Lim Miin Ning"
+                                    id="committeeAvatar-48" src="image/miinning.webp" alt="Lim Miin Ning"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1426,8 +1361,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-49"
-                                    src="image/tianyu.webp" alt="Har Tien Yu"
+                                    id="committeeAvatar-49" src="image/tianyu.webp" alt="Har Tien Yu"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1451,9 +1385,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-50"
-                                    src="image/andyclos.webp"
-                                    alt="Andyclos A/L Boon Mee"
+                                    id="committeeAvatar-50" src="image/andyclos.webp" alt="Andyclos A/L Boon Mee"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1477,8 +1409,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-51" src="image/bern.webp"
-                                    alt="Bernadatte Lee Pei Chen"
+                                    id="committeeAvatar-51" src="image/bern.webp" alt="Bernadatte Lee Pei Chen"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1503,8 +1434,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-52" src="image/iuwan.webp"
-                                    alt="Khoo Iu Wan"
+                                    id="committeeAvatar-52" src="image/iuwan.webp" alt="Khoo Iu Wan"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1529,8 +1459,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-53" src="image/hazim.webp"
-                                    alt="Hazim Muhsin Bin Munir"
+                                    id="committeeAvatar-53" src="image/hazim.webp" alt="Hazim Muhsin Bin Munir"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1555,8 +1484,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-54"
-                                    src="image/najihah.webp"
+                                    id="committeeAvatar-54" src="image/najihah.webp"
                                     alt="Najihah Hanani Binti Ahmad Farid"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
@@ -1583,8 +1511,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-55" src="image/sergio.webp"
-                                    alt="Sergio Law Zhe Xian"
+                                    id="committeeAvatar-55" src="image/sergio.webp" alt="Sergio Law Zhe Xian"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1609,8 +1536,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-56" src="image/darren.webp"
-                                    alt="Darren Fu Hon Meng"
+                                    id="committeeAvatar-56" src="image/darren.webp" alt="Darren Fu Hon Meng"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1635,8 +1561,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-57" src="image/gordon.webp"
-                                    alt="Gordon Chai Ming Xun"
+                                    id="committeeAvatar-57" src="image/gordon.webp" alt="Gordon Chai Ming Xun"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1661,8 +1586,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-58" src="image/hadrie.webp"
-                                    alt="Hadrie Hakimi Bin Nazarudin"
+                                    id="committeeAvatar-58" src="image/hadrie.webp" alt="Hadrie Hakimi Bin Nazarudin"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1689,8 +1613,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-59" src="image/yihan.webp"
-                                    alt="Loh Yi Han"
+                                    id="committeeAvatar-59" src="image/yihan.webp" alt="Loh Yi Han"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1715,8 +1638,7 @@
                         <div class="w-44 overflow-hidden"><span
                                 class="lazy-load-image-background opacity lazy-load-image-loaded"
                                 style="color: transparent; display: inline-block; height: 200px; width: 200px;"><img
-                                    id="committeeAvatar-60"
-                                    src="image/meizhen.webp" alt="Wong Mei Zhen"
+                                    id="committeeAvatar-60" src="image/meizhen.webp" alt="Wong Mei Zhen"
                                     class="w-44 translate-y-0 hover:-translate-y-2 hover:scale-105 transition-all duration-150 relative object-center -bottom-12 z-3 max-h-[250px] max-w-[176px]"
                                     width="200" height="200"></span></div>
                     </div>
@@ -1737,3 +1659,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </main>
+</body>
+
+</html>
